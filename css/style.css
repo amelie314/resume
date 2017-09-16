@@ -3,11 +3,44 @@
   font-family: 微軟正黑體;
 }
 
+body {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #081731;
+  color: #f3f3f3;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+  margin-top: 40px;
+}
+
 .resume {
   padding: 30px;
+  max-width: 950px;
 }
 .resume .buttons a {
   padding: 5px;
+  color: #EEA9A9;
 }
 
 .bottom {
@@ -22,4 +55,8 @@
 }
 .bottom .left {
   width: 40%;
+  padding-right: 20px;
+}
+.bottom .right {
+  padding-right: 20px;
 }

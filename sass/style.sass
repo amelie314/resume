@@ -1,11 +1,34 @@
+$color_white: #f3f3f3
+$color_deep_blue: #081731
+$color_pink: #EEA9A9
+$color_blue: #005CAF
 *
   font-family: 微軟正黑體
   // border: solid 1px black
+body
+  padding: 20px
+  display: flex
+  justify-content: center
+  background-color: $color_deep_blue
+  color: $color_white
+ul
+  padding: 0
+  list-style: none
+h2
+  margin: 0
+  margin-bottom: 25px
+h3 
+  margin: 0
+h4 
+  margin: 0
+  margin-top: 40px
 .resume
   padding: 30px
   .buttons
     a
       padding: 5px
+      color: $color_pink
+  max-width: 950px
 .bottom
   display: flex
   padding: 5px
@@ -14,4 +37,7 @@
     display: inline-block
   .left
     width: 40%
+    padding-right: 20px
+  .right
+    padding-right: 20px
    
