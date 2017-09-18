@@ -4,7 +4,7 @@
 }
 
 body {
-  padding: 20px;
+  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,6 +18,10 @@ body {
 ul {
   padding: 0;
   list-style: none;
+}
+
+h1 {
+  margin: 0;
 }
 
 h2 {
@@ -41,6 +45,22 @@ h4 {
 .resume .buttons a {
   padding: 5px;
   color: #EEA9A9;
+}
+.resume .decoration {
+  margin-right: 20px;
+  margin-top: 10px;
+  float: right;
+  width: 114px;
+  height: 114px;
+  border-radius: 100%;
+  box-shadow: 0 0 0 3px;
+  background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10441003_929139190490052_4442256361444094961_n.jpg?oh=6f5a8f13067328d573f345107e3ee974&oe=5A0BAE2B);
+  background-size: cover;
+  color: white;
+}
+
+h1, .decoration {
+  display: inline-block;
 }
 
 .bottom {

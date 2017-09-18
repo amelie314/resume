@@ -6,7 +6,7 @@ $color_blue: #005CAF
   font-family: 微軟正黑體
   // border: solid 1px black
 body
-  padding: 20px
+  padding: 30px
   display: flex
   justify-content: center
   background-color: $color_deep_blue
@@ -14,6 +14,8 @@ body
 ul
   padding: 0
   list-style: none
+h1
+  margin: 0
 h2
   margin: 0
   margin-bottom: 25px
@@ -24,11 +26,25 @@ h4
   margin-top: 40px
 .resume
   padding: 30px
+  max-width: 950px
   .buttons
     a
       padding: 5px
       color: $color_pink
-  max-width: 950px
+  .decoration
+    margin-right: 20px
+    margin-top: 10px
+    float: right
+    width: 114px
+    height: 114px
+    border-radius: 100%
+    box-shadow: 0 0 0 3px
+    background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10441003_929139190490052_4442256361444094961_n.jpg?oh=6f5a8f13067328d573f345107e3ee974&oe=5A0BAE2B)
+    background-size: cover
+    color: rgba(256,256,256,1)
+h1,.decoration
+  display: inline-block
+  
 .bottom
   display: flex
   padding: 5px
