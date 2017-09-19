@@ -1,16 +1,24 @@
+/* 顏色變數 */
 $color_white: #f3f3f3
 $color_deep_blue: #081731
 $color_pink: #EEA9A9
+$color_red: #CB1B45
 $color_blue: #005CAF
+
 *
   font-family: 微軟正黑體
-  // border: solid 1px black
+  // border: solid 1px white
 body
   padding: 30px
   display: flex
   justify-content: center
   background-color: $color_deep_blue
   color: $color_white
+  font-size: 15px
+  line-height: 28px
+  letter-spacing: 1px
+
+/*複寫區*/
 ul
   padding: 0
   list-style: none
@@ -19,21 +27,27 @@ h1
 h2
   margin: 0
   margin-bottom: 25px
+  &:after
+    content: " "
+    display: inline-block
+    width: 20px
+    height: 8px
+    background-color: $color_red
+    margin-left: 10px
 h3 
   margin: 0
 h4 
   margin: 0
   margin-top: 40px
+  opacity: 0.8
+  font-weight: 400
 .resume
   padding: 30px
   max-width: 950px
-  .buttons
-    a
-      padding: 5px
-      color: $color_pink
-  .decoration
+  border: solid 8px white  
+  /*圖片設定*/   
+  .pic
     margin-right: 20px
-    margin-top: 10px
     float: right
     width: 114px
     height: 114px
@@ -41,19 +55,39 @@ h4
     box-shadow: 0 0 0 3px
     background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10441003_929139190490052_4442256361444094961_n.jpg?oh=6f5a8f13067328d573f345107e3ee974&oe=5A0BAE2B)
     background-size: cover
-    color: rgba(256,256,256,1)
-h1,.decoration
+    color: rgba(256,256,256,1)   
+  /*按鈕設定*/  
+  .buttons
+    a
+      padding: 5px
+      color: $color_red
+      text-decoration: none
+
+h1,.pic
   display: inline-block
   
+/*下半部*/  
 .bottom
   display: flex
-  padding: 5px
   .left,.right
-    padding: 10px
+    margin-right: 10px
     display: inline-block
   .left
     width: 40%
     padding-right: 20px
   .right
     padding-right: 20px
+    /*清單排列*/
+    ul.listexperience
+      >li
+        display: flex
+        margin-bottom: 15px
+        ul
+          padding-left: 10px
+          margin-left: 10px
+          border-left: solid 4px white
+          span
+            font-weight: normal
+            opacity: 0.9
+    
    

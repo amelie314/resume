@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 顏色變數 */
 * {
   font-family: 微軟正黑體;
 }
@@ -13,8 +14,12 @@ body {
           justify-content: center;
   background-color: #081731;
   color: #f3f3f3;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 1px;
 }
 
+/*複寫區 */
 ul {
   padding: 0;
   list-style: none;
@@ -28,6 +33,14 @@ h2 {
   margin: 0;
   margin-bottom: 25px;
 }
+h2:after {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 8px;
+  background-color: #CB1B45;
+  margin-left: 10px;
+}
 
 h3 {
   margin: 0;
@@ -36,19 +49,19 @@ h3 {
 h4 {
   margin: 0;
   margin-top: 40px;
+  opacity: 0.8;
+  font-weight: 400;
 }
 
 .resume {
   padding: 30px;
   max-width: 950px;
+  border: solid 8px white;
+  /*圖片設定 */
+  /*按鈕設定 */
 }
-.resume .buttons a {
-  padding: 5px;
-  color: #EEA9A9;
-}
-.resume .decoration {
+.resume .pic {
   margin-right: 20px;
-  margin-top: 10px;
   float: right;
   width: 114px;
   height: 114px;
@@ -58,19 +71,24 @@ h4 {
   background-size: cover;
   color: white;
 }
+.resume .buttons a {
+  padding: 5px;
+  color: #CB1B45;
+  text-decoration: none;
+}
 
-h1, .decoration {
+h1, .pic {
   display: inline-block;
 }
 
+/*下半部 */
 .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
 }
 .bottom .left, .bottom .right {
-  padding: 10px;
+  margin-right: 10px;
   display: inline-block;
 }
 .bottom .left {
@@ -79,4 +97,20 @@ h1, .decoration {
 }
 .bottom .right {
   padding-right: 20px;
+  /*清單排列 */
+}
+.bottom .right ul.listexperience > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.bottom .right ul.listexperience > li ul {
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: solid 4px white;
+}
+.bottom .right ul.listexperience > li ul span {
+  font-weight: normal;
+  opacity: 0.9;
 }
