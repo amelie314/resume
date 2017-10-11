@@ -1,12 +1,11 @@
 /* 顏色變數 */
 $color_white: #f3f3f3
 $color_deep_blue: #081731
-$color_pink: #EEA9A9
 $color_red: #CB1B45
 $color_blue: #005CAF
 
 *
-  font-family: 微軟正黑體
+  font-family: 'Noto Sans'
   // border: solid 1px white
 body
   padding: 30px
@@ -45,6 +44,7 @@ h4
   padding: 30px
   max-width: 950px
   border: solid 8px white  
+  
   /*圖片設定*/   
   .pic
     margin-right: 20px
@@ -53,9 +53,10 @@ h4
     height: 114px
     border-radius: 100%
     box-shadow: 0 0 0 3px
-    background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/10441003_929139190490052_4442256361444094961_n.jpg?oh=6f5a8f13067328d573f345107e3ee974&oe=5A0BAE2B)
+    background-image: url(http://res.cloudinary.com/dpdxi9nqy/image/upload/v1505887053/15578494_1274966805907287_6836099784845354542_n_yzu8sv.jpg)
     background-size: cover
     color: rgba(256,256,256,1)   
+  
   /*按鈕設定*/  
   .buttons
     a
@@ -75,6 +76,49 @@ h1,.pic
   .left
     width: 40%
     padding-right: 20px
+    ul.listSkill
+      display: flex
+      flex-wrap: wrap
+      li
+        width: 33%
+        padding: 5px
+        box-sizing: border-box
+      .circle
+        width: 50px
+        height: 50px
+        background-color: rgba(203,27,69,0.3)
+        border-radius: 50%
+        position: relative
+        overflow: hidden
+        &::after
+          content: ""
+          display: block
+          background-color: $color_deep_blue
+          width: calc(100% - 20px)
+          height: calc(100% - 20px)
+          border-radius: 50%
+          position: relative
+          left: 50%
+          top: 50%
+          transform: translate(-50%, -50%)
+      .p90,.p180,.p270,.p360
+        width: 50%
+        height: 50%
+        background-color: black
+        position: absolute
+        left: 50%
+        top: 0
+        background-color: $color_red
+      .p180
+        top: 50%
+      .p270
+        left: 0%
+        top: 50%
+      .p360
+        left: 0%
+     
+          
+    
   .right
     padding-right: 20px
     /*清單排列*/
@@ -89,5 +133,3 @@ h1,.pic
           span
             font-weight: normal
             opacity: 0.9
-    
-   
