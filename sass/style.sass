@@ -83,6 +83,10 @@ h1,.pic
         width: 33%
         padding: 5px
         box-sizing: border-box
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
       .circle
         width: 50px
         height: 50px
@@ -116,11 +120,37 @@ h1,.pic
         top: 50%
       .p360
         left: 0%
-     
+    .pro
+      li
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-top: 3px
+        .bar
+          width: 120px
+          height: 10px
+          border: solid 2px $color_red
+          border-radius: 5px
+          background-color: rgba(203,27,69,0.2)
+          .value
+            height: 100%
+            background-color: $color_red
+          .p75
+            width: 75%
+          .p25
+            width: 25%
+          .p40
+            width: 40%
+          .p60
+            width: 60%
+          .p30
+            width: 30%
+          
           
     
   .right
-    padding-right: 20px
+    padding-right: 30px
+    padding-left: 35px
     /*清單排列*/
     ul.listexperience
       >li
